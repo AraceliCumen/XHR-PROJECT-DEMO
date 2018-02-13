@@ -1,0 +1,60 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container-flex-row {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.container-flex-column {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  padding: 2em;
+}
+
+header{
+  background-color: #ffc107;
+}
+.grad10 {
+  background: linear-gradient( rgb(146, 204, 154) 40%, rgb(238, 135, 135));
+}
+
+.vh100 {
+  height: 100vh;
+}
+
+.title{
+  font-family: 'Lobster', cursive;
+}
+
+.color-white{
+  color: white;
+}
+
+#color-white{
+  color: white;
+}
+
+.email{
+  border-bottom: white;
+  background-color: rgba(255,255,255,.7);
+}
+
+.icon{
+  font-size: 14px;
+}
+
+.font-2{
+  font-size: 2rem;
+}
+
+#btn-is{
+  background-color: transparent;
+  border: 1px solid gainsboro;
+}
