@@ -1,3 +1,4 @@
+alert('hola');
 window.onload = () => {
   const form = document.getElementById('search-form');
   const searchField = document.getElementById('search-keyword');
@@ -14,7 +15,7 @@ window.onload = () => {
 
   getNews = () => {
     const articleRequest = new XMLHttpRequest();
-    articleRequest.open('GET', `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=65082f4668484e9484931f976feb3d4c`);
+    articleRequest.open('GET', `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=f889df8b1c7b4541929e3b03ccbe19bd`);
     articleRequest.onload = addNews;
     articleRequest.onerror = handleError;
     articleRequest.send();
