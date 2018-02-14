@@ -8,6 +8,10 @@ body{
   font-family: 'Kavivanar', cursive;
 }
 
+header{
+  background-color: #ffc107;
+}
+
 .container-flex-row {
 	display: flex;
 	justify-content: space-between;
@@ -21,8 +25,19 @@ body{
   padding: 2em;
 }
 
-header{
-  background-color: #ffc107;
+.color-white{
+  color: white;
+}
+
+.font-2{
+  font-size: 2rem;
+}
+
+.article {
+  list-style: none;
+  background-color: #f2f4f7;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 #submit-btn{
@@ -35,12 +50,4 @@ header{
   border: none;
 }
 
-.color-white{
-  color: white;
-}
-
-
-.font-2{
-  font-size: 2rem;
-}
 

@@ -1,10 +1,10 @@
-alert('hola');
-window.onload = () => {
+// alert('hola');
+window.onload = function() {
   const form = document.getElementById('search-form');
   const searchField = document.getElementById('search-keyword');
   const responseContainer = document.getElementById('response-container');
   let searchedForText;
-  let cl = console.log();
+  let cl = console.log;
 
   form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -13,26 +13,26 @@ window.onload = () => {
     getNews();
   });
 
-  getNews = () => {
+  function getNews() {
     const articleRequest = new XMLHttpRequest();
-    articleRequest.open('GET', `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=f889df8b1c7b4541929e3b03ccbe19bd`);
+    articleRequest.open('GET', `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=65082f4668484e9484931f976feb3d4c`);
     articleRequest.onload = addNews;
     articleRequest.onerror = handleError;
     articleRequest.send();
   }
 
-  handleError = () => {
+  function handleError() {
     cl('se ha presentado un error');
   }
 
-  addNews = () => {
+  function addNews() {
     const data = JSON.parse(this.responseText);
     const response = data.response.docs;
     response.forEach(function(element) {
       cl(element);
       const snippet = element.snippet;
       let li = document.createElement('li');
-      li.className = 'articleClass';
+      li.className = 'article';
       li.innerText = snippet;
       responseContainer.appendChild(li);
     });
