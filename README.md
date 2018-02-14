@@ -1,9 +1,9 @@
-# Proyecto Nuestras Coders
+# Proyecto XHR-DEMO
 
 ## Objetivos
 
- Replicar la muestra de la imgane de Nuestras Coders dada en el punto Clase Práctica
-
+    Poner en practica el uso de AJAX, esencialmente haciendo uso de XMLHttpRequest.
+    
 ## Resultados
 
  ![Proyecto Nuestras Coders](assets/imgs/results/result.png "Nuestras Coders")
